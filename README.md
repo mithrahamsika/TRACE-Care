@@ -1,9 +1,10 @@
-﻿# TRACE-Care
+# TRACE-Care
+
 ### Transparent Recovery & Action Coordination Engine for Care
 
 **A barrier-aware patient care coordination platform designed to help close the gap between healthcare screening and completed follow-up care.**
 
-Developed by **PATHORA** | HealthTech Innovation Prototype
+Developed by **PATHORA** | HealthTech Innovation Prototype | 2026
 
 ---
 
@@ -29,9 +30,9 @@ Instead of relying only on generic appointment reminders, TRACE-Care connects **
 - **Staff Assignment:** Assign approved cases to responsible staff members.
 - **Intervention Tracking:** Monitor intervention progress from Not Started to In Progress and Completed.
 - **Follow-up Tracking:** Record follow-up status, dates and outcome notes.
-- **Care Pathway Monitoring:** View the patient's journey across the care coordination workflow.
+- **Care Pathway Monitoring:** View a patient's journey across the care coordination workflow.
 - **Analytics & Insights:** Monitor patient counts, barriers, approvals, interventions and follow-up completion.
-- **Audit Trail:** Maintain a record of important workflow activities.
+- **Audit Trail:** View recorded workflow activity entries.
 
 ## 4. How It Works
 
@@ -73,7 +74,7 @@ Analytics and Audit Trail
 | Pandas | Data processing and analytics |
 | Git & GitHub | Version control and project hosting |
 
-## 6. Recommendation Engine
+## 6. Explainable Recommendation Engine
 
 TRACE-Care uses a transparent rule-based recommendation engine.
 
@@ -83,7 +84,7 @@ TRACE-Care uses a transparent rule-based recommendation engine.
 | Financial Difficulty | Financial assistance support referral |
 | Language Barrier | Arrange language assistance or interpreter |
 | Appointment Unavailable | Find an alternative appointment or provider |
-| Unable to Contact Patient | Verify contact details and approved alternative channel |
+| Unable to Contact Patient | Verify contact details and an approved alternative channel |
 | Unclear Instructions | Staff-assisted clarification |
 | Fear or Anxiety | Supportive patient navigator conversation |
 | Other / Unknown | Manual staff review |
@@ -111,14 +112,13 @@ Recommendations are operational suggestions and require human review. The system
           |                         |
           +------------+------------+
                        |
-                  SQLite DB
+                    SQLite
 ```
 
 ## 8. Project Structure
-## 8. Project Structure
 
 ```text
-PATHORA/
+TRACE-Care/
 │
 ├── app.py
 ├── database.py
@@ -141,7 +141,6 @@ PATHORA/
     └── 8_Audit_Trail.py
 ```
 
-
 ## 9. Installation and Setup
 
 ### Prerequisites
@@ -154,8 +153,8 @@ PATHORA/
 ### Step 1: Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd PATHORA
+git clone https://github.com/mithrahamsika/TRACE-Care.git
+cd TRACE-Care
 ```
 
 ### Step 2: Create a virtual environment
@@ -188,7 +187,7 @@ The application will open in your browser.
 
 ## 10. Testing
 
-A dedicated `TESTING_CHECKLIST.md` is included to verify:
+A dedicated `TESTING_CHECKLIST.md` is included to guide verification of:
 
 - Patient registration and record consistency.
 - Barrier identification and recommendation accuracy.
@@ -196,10 +195,10 @@ A dedicated `TESTING_CHECKLIST.md` is included to verify:
 - Intervention and follow-up tracking.
 - Care pathway monitoring.
 - Analytics and database consistency.
-- Audit trail integrity.
+- Audit trail behavior.
 - Application stability.
 
-Only tests that have actually passed should be marked as completed.
+Test results should be marked as passed only after successful verification.
 
 ## 11. Privacy and Responsible Use
 
@@ -212,6 +211,7 @@ Only tests that have actually passed should be marked as completed.
 ## 12. Current Scope and Future Enhancements
 
 **Current prototype scope**
+
 - Local SQLite database.
 - Rule-based explainable recommendations.
 - Human-in-the-loop approval.
@@ -219,6 +219,7 @@ Only tests that have actually passed should be marked as completed.
 - Follow-up monitoring and analytics.
 
 **Potential future enhancements**
+
 - FHIR-based healthcare interoperability.
 - Integration with hospital information systems.
 - Community support and resource directories.
