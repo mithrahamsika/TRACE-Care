@@ -1,0 +1,27 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+
+# Local database and database backups
+tracecare.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables and secrets
+.env
+.streamlit/secrets.toml
+
+# Editor and operating system
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Test and cache files
+.pytest_cache/
+.coverage
